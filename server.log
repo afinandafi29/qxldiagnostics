@@ -1,0 +1,201 @@
+::1 - - [05/Jun/2026 13:03:17] "GET / HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:03:18] "GET /image/WhatsApp-Image-2024-09-23-at-13.26.25_b906ce58-1536x864.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:03:18] "GET /QXL-Diagnostics-Lab-Logo-1.jpg HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:03:18] "GET /image/Speciality%20Test.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:03:18] "GET /image/Dr.%20Pritilata%20Rout%20(MD,%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:03:18] "GET /image/Dr.%20Shantakumar%20Muruda%20%20(MD,%20BIOCHEMISTRY)].png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:03:18] "GET /image/Dr.%20Ajitha%20Pillai%20(MD,%20MICROBIOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:03:18] "GET /image/Dr.%20Naveen%20Kumar%20N%20(DCP,%20DNB%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:03:18] code 404, message File not found
+::1 - - [05/Jun/2026 13:03:18] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 13:17:31] "GET / HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:17:31] "GET /QXL-Diagnostics-Lab-Logo-1.jpg HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:17:31] code 404, message File not found
+::1 - - [05/Jun/2026 13:17:31] "GET /image/WhatsApp-Image-2024-09-23-at-13.26.25_b906ce58-1536x864.png HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 13:17:31] "GET /image/Dr.%20Shantakumar%20Muruda%20%20(MD,%20BIOCHEMISTRY)].png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:17:31] code 404, message File not found
+::1 - - [05/Jun/2026 13:17:31] "GET /image/Speciality%20Test.png HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 13:17:31] "GET /image/Dr.%20Ajitha%20Pillai%20(MD,%20MICROBIOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:17:31] "GET /image/Dr.%20Pritilata%20Rout%20(MD,%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:17:31] "GET /image/Dr.%20Naveen%20Kumar%20N%20(DCP,%20DNB%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:17:32] code 404, message File not found
+::1 - - [05/Jun/2026 13:17:32] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 13:24:09] "GET / HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:24:09] code 404, message File not found
+::1 - - [05/Jun/2026 13:24:09] "GET /image/WhatsApp-Image-2024-09-23-at-13.26.25_b906ce58-1536x864.png HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 13:24:09] "GET /QXL-Diagnostics-Lab-Logo-1.jpg HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:24:09] code 404, message File not found
+::1 - - [05/Jun/2026 13:24:09] "GET /image/Speciality%20Test.png HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 13:24:09] "GET /image/Dr.%20Shantakumar%20Muruda%20%20(MD,%20BIOCHEMISTRY)].png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:24:09] "GET /image/Dr.%20Ajitha%20Pillai%20(MD,%20MICROBIOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:24:09] "GET /image/Dr.%20Naveen%20Kumar%20N%20(DCP,%20DNB%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:24:09] "GET /image/Dr.%20Pritilata%20Rout%20(MD,%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:24:09] code 404, message File not found
+::1 - - [05/Jun/2026 13:24:09] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 13:42:01] "GET / HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:42:01] code 404, message File not found
+::1 - - [05/Jun/2026 13:42:01] "GET /image/WhatsApp-Image-2024-09-23-at-13.26.25_b906ce58-1536x864.png HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 13:42:01] code 404, message File not found
+::1 - - [05/Jun/2026 13:42:01] "GET /image/Speciality%20Test.png HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 13:42:01] "GET /image/Dr.%20Shantakumar%20Muruda%20%20(MD,%20BIOCHEMISTRY)].png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:42:01] "GET /QXL-Diagnostics-Lab-Logo-1.jpg HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:42:01] "GET /image/Dr.%20Ajitha%20Pillai%20(MD,%20MICROBIOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:42:01] "GET /image/Dr.%20Pritilata%20Rout%20(MD,%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:42:01] "GET /image/Dr.%20Naveen%20Kumar%20N%20(DCP,%20DNB%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:42:01] code 404, message File not found
+::1 - - [05/Jun/2026 13:42:01] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 13:46:30] "GET / HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:46:30] code 404, message File not found
+::1 - - [05/Jun/2026 13:46:30] "GET /QXL-Diagnostics-Lab-Logo-1.jpg HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:46:30] "GET /image/WhatsApp-Image-2024-09-23-at-13.26.25_b906ce58-1536x864.png HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 13:46:30] "GET /image/Dr.%20Shantakumar%20Muruda%20%20(MD,%20BIOCHEMISTRY)].png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:46:30] code 404, message File not found
+::1 - - [05/Jun/2026 13:46:30] "GET /image/Speciality%20Test.png HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 13:46:30] "GET /image/Dr.%20Ajitha%20Pillai%20(MD,%20MICROBIOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:46:30] "GET /image/Dr.%20Pritilata%20Rout%20(MD,%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:46:30] "GET /image/Dr.%20Naveen%20Kumar%20N%20(DCP,%20DNB%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:46:30] code 404, message File not found
+::1 - - [05/Jun/2026 13:46:30] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 13:52:18] "GET / HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:52:18] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:52:18] "GET /image/Dr.%20Shantakumar%20Muruda%20%20(MD,%20BIOCHEMISTRY)].png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:52:18] "GET /image/Dr.%20Naveen%20Kumar%20N%20(DCP,%20DNB%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:52:18] "GET /image/Dr.%20Ajitha%20Pillai%20(MD,%20MICROBIOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:52:18] "GET /image/Dr.%20Pritilata%20Rout%20(MD,%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:52:19] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:52:19] "GET /image/Specialitytest.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:52:19] code 404, message File not found
+::1 - - [05/Jun/2026 13:52:19] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 13:57:29] "GET / HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:57:29] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:57:29] "GET /image/Dr.%20Shantakumar%20Muruda%20%20(MD,%20BIOCHEMISTRY)].png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:57:29] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:57:29] "GET /image/Dr.%20Pritilata%20Rout%20(MD,%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:57:29] "GET /image/Dr.%20Ajitha%20Pillai%20(MD,%20MICROBIOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:57:29] "GET /image/Dr.%20Naveen%20Kumar%20N%20(DCP,%20DNB%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 13:57:30] code 404, message File not found
+::1 - - [05/Jun/2026 13:57:30] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 14:04:30] "GET / HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:04:30] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:04:30] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:04:31] code 404, message File not found
+::1 - - [05/Jun/2026 14:04:31] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 14:10:37] "GET / HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:10:37] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:10:37] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:10:37] code 404, message File not found
+::1 - - [05/Jun/2026 14:10:37] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 14:11:07] "GET / HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:11:07] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:11:07] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:11:08] code 404, message File not found
+::1 - - [05/Jun/2026 14:11:08] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 14:18:37] "GET / HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:18:37] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:18:37] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:18:39] code 404, message File not found
+::1 - - [05/Jun/2026 14:18:39] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 14:28:54] "GET / HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:28:54] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:28:54] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:28:55] code 404, message File not found
+::1 - - [05/Jun/2026 14:28:55] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 14:29:37] "GET / HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:29:37] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:29:37] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:29:37] code 404, message File not found
+::1 - - [05/Jun/2026 14:29:37] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 14:30:52] "GET / HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:30:52] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:30:52] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:30:52] code 404, message File not found
+::1 - - [05/Jun/2026 14:30:52] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 14:32:45] "GET / HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:32:45] "GET /image/Dr.%20Naveen%20Kumar%20N%20(DCP,%20DNB%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:32:45] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:32:45] "GET /image/Dr.%20Ajitha%20Pillai%20(MD,%20MICROBIOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:32:45] "GET /image/Dr.%20Pritilata%20Rout%20(MD,%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:32:45] "GET /image/Dr.%20Shantakumar%20Muruda%20%20(MD,%20BIOCHEMISTRY)].png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:32:45] "GET /image/doctors_hero.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:32:45] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:32:45] code 404, message File not found
+::1 - - [05/Jun/2026 14:32:45] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 14:33:18] "GET / HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:33:18] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:33:18] "GET /image/Dr.%20Naveen%20Kumar%20N%20(DCP,%20DNB%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:33:18] "GET /image/Dr.%20Ajitha%20Pillai%20(MD,%20MICROBIOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:33:18] "GET /image/Dr.%20Pritilata%20Rout%20(MD,%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:33:18] "GET /image/Dr.%20Shantakumar%20Muruda%20%20(MD,%20BIOCHEMISTRY)].png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:33:18] "GET /image/doctors_hero.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:33:18] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:33:18] code 404, message File not found
+::1 - - [05/Jun/2026 14:33:18] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 14:39:58] "GET / HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:39:58] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:39:58] "GET /image/Dr.%20Naveen%20Kumar%20N%20(DCP,%20DNB%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:39:58] "GET /image/Dr.%20Ajitha%20Pillai%20(MD,%20MICROBIOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:39:58] "GET /image/Dr.%20Pritilata%20Rout%20(MD,%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:39:58] "GET /image/Dr.%20Shantakumar%20Muruda%20%20(MD,%20BIOCHEMISTRY)].png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:39:58] "GET /image/doctors_hero.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:39:58] "GET /image/Specialitytest.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:39:58] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:39:59] code 404, message File not found
+::1 - - [05/Jun/2026 14:39:59] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 14:40:42] "GET / HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:42] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:42] "GET /image/Dr.%20Naveen%20Kumar%20N%20(DCP,%20DNB%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:42] "GET /image/Dr.%20Ajitha%20Pillai%20(MD,%20MICROBIOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:42] "GET /image/Dr.%20Pritilata%20Rout%20(MD,%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:42] "GET /image/Dr.%20Shantakumar%20Muruda%20%20(MD,%20BIOCHEMISTRY)].png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:42] "GET /image/doctors_hero.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:42] "GET /image/Specialitytest.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:42] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:43] code 404, message File not found
+::1 - - [05/Jun/2026 14:40:43] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 14:40:44] "GET / HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:44] "GET /image/Dr.%20Naveen%20Kumar%20N%20(DCP,%20DNB%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:44] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:44] "GET /image/Dr.%20Pritilata%20Rout%20(MD,%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:44] "GET /image/Dr.%20Ajitha%20Pillai%20(MD,%20MICROBIOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:44] "GET /image/Dr.%20Shantakumar%20Muruda%20%20(MD,%20BIOCHEMISTRY)].png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:44] "GET /image/Specialitytest.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:44] "GET /image/doctors_hero.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:44] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:45] "GET / HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:45] "GET /image/Dr.%20Ajitha%20Pillai%20(MD,%20MICROBIOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:45] "GET /image/Dr.%20Naveen%20Kumar%20N%20(DCP,%20DNB%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:45] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:45] "GET /image/Dr.%20Pritilata%20Rout%20(MD,%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:45] "GET /image/Dr.%20Shantakumar%20Muruda%20%20(MD,%20BIOCHEMISTRY)].png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:45] "GET /image/Specialitytest.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:45] "GET /image/doctors_hero.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:45] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 14:40:46] code 404, message File not found
+::1 - - [05/Jun/2026 14:40:46] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 15:16:39] "GET / HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 15:16:39] "GET /image/Logo%20(1).png HTTP/1.1" 304 -
+::1 - - [05/Jun/2026 15:16:39] "GET /image/Dr.%20Naveen%20Kumar%20N%20(DCP,%20DNB%20PATHOLOGY).png HTTP/1.1" 304 -
+::1 - - [05/Jun/2026 15:16:39] "GET /image/Dr.%20Ajitha%20Pillai%20(MD,%20MICROBIOLOGY).png HTTP/1.1" 304 -
+::1 - - [05/Jun/2026 15:16:39] "GET /image/Dr.%20Pritilata%20Rout%20(MD,%20PATHOLOGY).png HTTP/1.1" 304 -
+::1 - - [05/Jun/2026 15:16:39] "GET /image/Dr.%20Shantakumar%20Muruda%20%20(MD,%20BIOCHEMISTRY)].png HTTP/1.1" 304 -
+::1 - - [05/Jun/2026 15:16:39] "GET /image/doctors_hero.png HTTP/1.1" 304 -
+::1 - - [05/Jun/2026 15:16:39] "GET /image/Meet%20our%20team.png HTTP/1.1" 304 -
+::1 - - [05/Jun/2026 15:16:39] "GET /image/Specialitytest.png HTTP/1.1" 304 -
+::1 - - [05/Jun/2026 15:16:39] "GET /image/about_lab.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 15:16:39] "GET /image/package_preventive.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 15:16:39] "GET /image/package_senior.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 15:16:39] "GET /image/package_fullbody.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 15:16:39] code 404, message File not found
+::1 - - [05/Jun/2026 15:16:39] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [05/Jun/2026 15:20:43] "GET / HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 15:20:43] "GET /image/Dr.%20Naveen%20Kumar%20N%20(DCP,%20DNB%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 15:20:43] "GET /image/Dr.%20Ajitha%20Pillai%20(MD,%20MICROBIOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 15:20:43] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 15:20:43] "GET /image/Dr.%20Pritilata%20Rout%20(MD,%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 15:20:43] "GET /image/Dr.%20Shantakumar%20Muruda%20%20(MD,%20BIOCHEMISTRY)].png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 15:20:43] "GET /image/doctors_hero.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 15:20:43] "GET /image/Specialitytest.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 15:20:43] "GET /image/about_doctor.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 15:20:43] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [05/Jun/2026 15:20:44] code 404, message File not found
+::1 - - [05/Jun/2026 15:20:44] "GET /favicon.ico HTTP/1.1" 404 -
