@@ -1,0 +1,12 @@
+<div style="position:absolute; bottom:25px; left:50%; transform:translateX(-50%); display:flex; gap:10px; z-index:15;" id="slider-dots">
+    <div class="dot active" style="width:12px; height:12px; border-radius:50%; background:#1A365D; cursor:pointer; transition:all 0.3s;"></div>
+    <div class="dot " style="width:12px; height:12px; border-radius:50%; background:rgba(26,54,93,0.3); cursor:pointer; transition:all 0.3s;"></div>
+    <div class="dot " style="width:12px; height:12px; border-radius:50%; background:rgba(26,54,93,0.3); cursor:pointer; transition:all 0.3s;"></div>
+    <div class="dot " style="width:12px; height:12px; border-radius:50%; background:rgba(26,54,93,0.3); cursor:pointer; transition:all 0.3s;"></div>
+    <div class="dot " style="width:12px; height:12px; border-radius:50%; background:rgba(26,54,93,0.3); cursor:pointer; transition:all 0.3s;"></div>
+    <div class="dot " style="width:12px; height:12px; border-radius:50%; background:rgba(26,54,93,0.3); cursor:pointer; transition:all 0.3s;"></div>
+    <div class="dot " style="width:12px; height:12px; border-radius:50%; background:rgba(26,54,93,0.3); cursor:pointer; transition:all 0.3s;"></div>
+    <div class="dot " style="width:12px; height:12px; border-radius:50%; background:rgba(26,54,93,0.3); cursor:pointer; transition:all 0.3s;"></div>
+    <div class="dot " style="width:12px; height:12px; border-radius:50%; background:rgba(26,54,93,0.3); cursor:pointer; transition:all 0.3s;"></div>
+    <div class="dot " style="width:12px; height:12px; border-radius:50%; background:rgba(26,54,93,0.3); cursor:pointer; transition:all 0.3s;"></div>
+</div>

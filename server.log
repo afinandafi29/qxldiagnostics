@@ -199,3 +199,243 @@
 ::1 - - [05/Jun/2026 15:20:43] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
 ::1 - - [05/Jun/2026 15:20:44] code 404, message File not found
 ::1 - - [05/Jun/2026 15:20:44] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [11/Jun/2026 11:07:08] "GET / HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 11:07:08] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 11:07:08] "GET /image/Dr.%20Naveen%20Kumar%20N%20(DCP,%20DNB%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 11:07:08] "GET /image/Dr.%20Ajitha%20Pillai%20(MD,%20MICROBIOLOGY).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 11:07:08] "GET /image/Dr.%20Shantakumar%20Muruda%20%20(MD,%20BIOCHEMISTRY)].png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 11:07:08] "GET /image/Dr.%20Pritilata%20Rout%20(MD,%20PATHOLOGY).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 11:07:08] "GET /image/doctors_hero.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 11:07:08] "GET /image/Specialitytest.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 11:07:08] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 11:07:08] "GET /image/about_doctor.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 11:18:43] "GET / HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 11:18:43] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 11:18:43] "GET /image/Specialitytest.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 11:18:43] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 11:18:43] "GET /image/about_doctor.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 11:18:43] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 11:20:25] "GET / HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 11:20:25] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 11:20:25] "GET /image/Specialitytest.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 11:20:25] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 11:20:25] "GET /image/about_doctor.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 11:20:25] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:08:18] "GET / HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:08:18] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:08:18] "GET /image/doctors_hero.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:08:18] "GET /image/about_doctor.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:08:18] "GET /image/new_full_body.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:08:18] "GET /image/2e9200f1-6293-4d47-af78-760095cef3c3.jpeg HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:08:18] "GET /image/Specialitytest.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:08:18] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:08:18] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:11:48] "GET / HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:11:49] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:11:49] "GET /image/doctors_hero.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:11:49] "GET /image/about_doctor.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:11:49] "GET /image/new_full_body.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:11:49] "GET /image/2e9200f1-6293-4d47-af78-760095cef3c3.jpeg HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:11:49] "GET /image/Specialitytest.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:11:49] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:11:50] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:32] "GET / HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:32] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:32] "GET /image/doctors_hero.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:32] "GET /image/about_doctor.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:32] "GET /image/new_full_body.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:32] "GET /image/2e9200f1-6293-4d47-af78-760095cef3c3.jpeg HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:32] "GET /image/Specialitytest.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:32] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:32] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:33] "GET / HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:33] "GET /image/doctors_hero.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:33] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:33] "GET /image/about_doctor.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:33] "GET /image/new_full_body.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:33] "GET /image/Specialitytest.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:33] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:34] "GET / HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:34] "GET / HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:34] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:34] "GET /image/doctors_hero.png HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('::1', 54064, 0, 0)
+::1 - - [11/Jun/2026 13:12:34] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:34] "GET /image/doctors_hero.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:34] "GET /image/about_doctor.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:34] "GET /image/new_full_body.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:34] "GET / HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:34] "GET /image/Specialitytest.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:34] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:34] "GET / HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 1422, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 732, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 496, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 484, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 739, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 942, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/shutil.py", line 257, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+::1 - - [11/Jun/2026 13:12:34] "GET / HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:34] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:34] "GET /image/doctors_hero.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:35] "GET /image/doctors_hero.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:35] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:35] "GET / HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:35] "GET /image/about_doctor.png HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('::1', 54079, 0, 0)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 1422, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 732, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 496, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 484, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 739, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 942, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/shutil.py", line 257, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+::1 - - [11/Jun/2026 13:12:35] "GET /image/new_full_body.png HTTP/1.1" 200 -
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('::1', 54080, 0, 0)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 1422, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 732, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 496, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 484, in handle_one_request
+    method()
+    ~~~~~~^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 739, in do_GET
+    self.copyfile(f, self.wfile)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 942, in copyfile
+    shutil.copyfileobj(source, outputfile)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/shutil.py", line 257, in copyfileobj
+    fdst_write(buf)
+    ~~~~~~~~~~^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socketserver.py", line 845, in write
+    self._sock.sendall(b)
+    ~~~~~~~~~~~~~~~~~~^^^
+BrokenPipeError: [Errno 32] Broken pipe
+----------------------------------------
+::1 - - [11/Jun/2026 13:12:35] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:35] "GET /image/doctors_hero.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:35] "GET /image/about_doctor.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:35] "GET /image/new_full_body.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:35] "GET /image/Specialitytest.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:35] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:35] "GET / HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:35] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:35] "GET /image/doctors_hero.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:35] "GET /image/about_doctor.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:35] "GET /image/new_full_body.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:35] "GET /image/Specialitytest.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:12:35] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:10] "GET / HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:10] "GET /image/doctors_hero.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:10] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:10] "GET /image/about_doctor.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:10] "GET /image/new_full_body.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:10] "GET /image/Specialitytest.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:10] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:10] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:11] "GET / HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:11] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:11] "GET /image/doctors_hero.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:11] "GET /image/about_doctor.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:11] "GET /image/new_full_body.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:11] "GET /image/Specialitytest.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:11] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:11] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:11] "GET / HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:11] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:11] "GET /image/doctors_hero.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:11] "GET /image/about_doctor.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:11] "GET /image/new_full_body.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:11] "GET /image/Specialitytest.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:11] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:12] "GET / HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:12] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:12] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:12] "GET /image/doctors_hero.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:12] "GET /image/about_doctor.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:12] "GET /image/new_full_body.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:12] "GET /image/Specialitytest.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:12] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:12] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:51] "GET / HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:51] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:51] "GET /image/doctors_hero.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:51] "GET /image/about_doctor.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:51] "GET /image/new_full_body.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:51] "GET /image/Specialitytest.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:51] "GET /image/Meet%20our%20team.png HTTP/1.1" 200 -
+::1 - - [11/Jun/2026 13:15:51] "GET /image/Logo%20(1).png HTTP/1.1" 200 -
