@@ -264,7 +264,7 @@ export default function Home() {
                   {/* Image */}
                   <div className="w-56 h-56 rounded-2xl bg-[#dbeafe] absolute top-10 right-10 lg:w-[450px] lg:h-[450px] overflow-hidden border-8 border-white/20 shadow-2xl z-20 animate-in zoom-in duration-700">
                     <Image
-                      key={activeSlide.id}
+                      key={activeSlide.title}
                       src={activeSlide.image}
                       alt={activeSlide.title}
                       fill
@@ -278,7 +278,7 @@ export default function Home() {
               {/* Slide dots */}
               <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-2 z-20">
                 {slides.map((s, idx) => (
-                  <button key={s.id} onClick={() => setCurrentSlide(idx)}
+                  <button key={s.title} onClick={() => setCurrentSlide(idx)}
                     className={`h-2 rounded-full transition-all duration-300 ${idx === currentSlide ? "w-7 bg-[#2563eb]" : "w-2 bg-gray-300 hover:bg-gray-400"}`}
                     aria-label={`Slide ${idx + 1}`}
                   />
