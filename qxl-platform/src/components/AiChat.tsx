@@ -79,6 +79,7 @@ export default function AiChat() {
         rel="noreferrer"
         aria-label="Chat on WhatsApp"
         title="Chat on WhatsApp"
+        className="fab-whatsapp-btn"
         style={{
           position: 'fixed',
           bottom: '30px',
@@ -142,6 +143,7 @@ export default function AiChat() {
       {/* Floating AI Chat Button - above WhatsApp */}
       <button
         onClick={() => setIsOpen(!isOpen)}
+        className="fab-ai-chat-btn"
         style={{
           position: 'fixed',
           bottom: '105px',

@@ -1152,3 +1152,25 @@
             height: 100%;
             object-fit: cover;
         }
+
+        /* Prevent content from being hidden behind sticky bottom nav on mobile */
+        @media (max-width: 1023px) {
+            body {
+                padding-bottom: 80px !important;
+            }
+            .fab-whatsapp-btn {
+                bottom: 90px !important;
+            }
+            .fab-ai-chat-btn {
+                bottom: 165px !important;
+            }
+        }
+
+        /* Hide scrollbars for scrollable carousels */
+        .scrollbar-none::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-none {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
