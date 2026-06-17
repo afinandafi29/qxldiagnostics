@@ -101,6 +101,7 @@ export default function Header() {
               <Link href="/about" className="hover:text-[#2563eb] transition-colors uppercase tracking-wide">About Us</Link>
               <Link href="/founder" className="hover:text-[#2563eb] transition-colors uppercase tracking-wide">Founder & Advisors</Link>
               <Link href="/specialities" className="hover:text-[#2563eb] transition-colors uppercase tracking-wide">Our Specialities</Link>
+              <Link href="/packages" className="bg-sky-100 text-sky-700 px-4 py-2 rounded-lg font-bold hover:bg-sky-200 transition-colors uppercase tracking-wide text-[13px] shadow-sm">Packages</Link>
               <Link href="/login" className="hover:text-[#2563eb] transition-colors uppercase tracking-wide">Login</Link>
               <Link href="/book" className="hover:text-[#2563eb] transition-colors uppercase tracking-wide">My Bookings</Link>
               <Link href="/report" className="hover:text-[#2563eb] transition-colors uppercase tracking-wide">My Reports</Link>
@@ -163,6 +164,13 @@ export default function Header() {
                 className="hover:text-[#2563eb] py-2 border-b border-gray-50 transition-colors"
               >
                 Our Specialities
+              </Link>
+              <Link 
+                href="/packages" 
+                onClick={() => setMobileMenuOpen(false)}
+                className="bg-sky-100 text-sky-700 py-2 px-3 rounded-lg hover:bg-sky-200 transition-colors my-1 text-center"
+              >
+                Packages
               </Link>
               <Link 
                 href="/login" 

@@ -69,7 +69,7 @@ export default function Home() {
       ctaLink: "/franchise",
       ctaSecondary: "Learn More",
       ctaSecondaryLink: "/about",
-      image: "/image/user_male_professional.jpg",
+      image: "/image/partner_with_us.png",
       imageFit: "cover",
       bgFrom: "#f0f9ff",
       bgTo: "#e0f2fe",
