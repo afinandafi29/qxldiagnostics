@@ -1,14 +1,11 @@
 "use client";
 import React, { useState } from 'react';
-import { Award, Briefcase, DollarSign, ShieldCheck } from 'lucide-react';
+import { Building2, TrendingUp, ShieldCheck, Users, Briefcase, Award, CheckCircle2, ChevronRight, Activity, Beaker, MapPin } from 'lucide-react';
+import Link from 'next/link';
 
 export default function FranchisePage() {
   const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    email: '',
-    location: '',
-    investment: ''
+    name: '', phone: '', email: '', state: '', city: '', model: '', budget: '', message: ''
   });
   const [submitted, setSubmitted] = useState(false);
 
@@ -19,178 +16,254 @@ export default function FranchisePage() {
     }
   };
 
-  const benefits = [
-    {
-      title: "Trusted Clinical Brand",
-      description: "Operate under QXL Diagnostics, a leading clinical lab with high-tech equipment.",
-      icon: <Award className="w-6 h-6 text-[#2563eb]" />
-    },
-    {
-      title: "High Returns & Low Risks",
-      description: "B2B and B2C collection models ensure steady volume and attractive profit margins.",
-      icon: <DollarSign className="w-6 h-6 text-[#2563eb]" />
-    },
-    {
-      title: "Operational Assistance",
-      description: "Complete training, marketing material, and cold-chain sample transport logistics provided.",
-      icon: <Briefcase className="w-6 h-6 text-[#2563eb]" />
-    },
-    {
-      title: "NABL Quality Backing",
-      description: "All samples are processed in our certified central laboratory by MD consultants.",
-      icon: <ShieldCheck className="w-6 h-6 text-[#2563eb]" />
-    }
-  ];
-
   return (
     <div className="bg-[#f8faff] min-h-screen">
-      {/* Page Hero */}
-      <section className="bg-gradient-to-r from-[#e0f2fe] to-[#fbf8f5] py-12 border-b border-gray-150">
-        <div className="max-w-[1200px] mx-auto px-4 w-full">
-          <h1 className="text-3xl md:text-4xl font-extrabold text-[#0f2d5e] mb-3">Franchise Opportunities</h1>
-          <p className="text-slate-500 text-sm md:text-base max-w-xl font-medium">
-            Partner with QXL Diagnostics and establish a clinical collection center in your city.
-          </p>
-          <div className="w-16 h-1 bg-[#2563eb] rounded-full mt-4"></div>
-        </div>
-      </section>
-
-      {/* Main Content */}
-      <section className="py-12">
-        <div className="max-w-[1200px] mx-auto px-4 w-full flex flex-col lg:flex-row gap-12">
-          
-          {/* Left info */}
-          <div className="w-full lg:w-3/5 space-y-8">
-            <div>
-              <h2 className="text-[#0f2d5e] text-2xl font-bold mb-3">Establish a QXL Collection Unit</h2>
-              <p className="text-xs text-slate-500 font-semibold leading-relaxed">
-                The diagnostic industry is one of the fastest-growing medical sectors in India. Partnering with QXL Diagnostics grants access to state-of-the-art laboratory infrastructure, specialized panels, and an advanced LIMS system to run a highly profitable collection franchise.
-              </p>
-            </div>
-
-            {/* Benefits Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {benefits.map((b, idx) => (
-                <div key={idx} className="bg-white border border-gray-150 rounded-2xl p-5 shadow-[0_2px_8px_rgba(0,0,0,0.01)]">
-                  <div className="w-11 h-11 rounded-full bg-[#dbeafe] flex items-center justify-center mb-3">
-                    {b.icon}
-                  </div>
-                  <h4 className="font-bold text-slate-800 text-sm mb-1">{b.title}</h4>
-                  <p className="text-[11px] text-slate-500 font-semibold leading-relaxed">{b.description}</p>
-                </div>
-              ))}
-            </div>
-
-            {/* Models */}
-            <div className="border-t border-gray-150 pt-8">
-              <h3 className="text-[#0f2d5e] text-lg font-bold mb-4">Franchise Models Available</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="p-4 bg-gray-50 border border-gray-200 rounded-2xl">
-                  <span className="text-xs font-bold text-[#2563eb] block mb-1">FOFO Model</span>
-                  <p className="text-[11px] text-slate-500 font-semibold">Franchise Owned Franchise Operated. Total control over local collections with QXL processing and logistics backup.</p>
-                </div>
-                <div className="p-4 bg-gray-50 border border-gray-200 rounded-2xl">
-                  <span className="text-xs font-bold text-[#2563eb] block mb-1">FOCO Model</span>
-                  <p className="text-[11px] text-slate-500 font-semibold">Franchise Owned Company Operated. Shared investment with laboratory management directly handled by QXL specialists.</p>
-                </div>
-              </div>
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-[#e0f2fe] to-[#eff6ff] py-16 md:py-24 border-b border-blue-100">
+        <div className="max-w-[1260px] mx-auto px-4 flex flex-col lg:flex-row gap-12 items-center">
+          <div className="flex-1">
+            <span className="inline-block bg-[#2563eb] text-white text-[10px] font-extrabold px-3 py-1.5 rounded-full tracking-widest uppercase mb-4 shadow-sm">
+              Partner with QXL Diagnostics
+            </span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight text-[#0f2d5e]">
+              Build a Successful <span className="text-[#2563eb]">Diagnostic Business</span> with a Trusted Brand
+            </h1>
+            <p className="text-slate-600 text-sm md:text-base font-medium mb-8 leading-relaxed max-w-2xl">
+              Become a franchise partner with QXL Diagnostics and establish a world-class Diagnostic & Sample Collection Center in your city. We provide complete business support, advanced laboratory services, technology, branding, training, and marketing to help you build a successful healthcare business.
+            </p>
+            <div className="flex gap-4">
+              <a href="#enquire" className="bg-[#2563eb] text-white font-extrabold px-8 py-3.5 rounded-full hover:bg-[#1d4ed8] transition-colors shadow-lg text-sm uppercase tracking-wider">
+                Enquire Now
+              </a>
             </div>
           </div>
-
-          {/* Right Lead Form */}
-          <div className="w-full lg:w-2/5">
-            <div className="bg-white border border-gray-150 rounded-3xl p-8 shadow-[0_4px_20px_rgba(0,0,0,0.02)] sticky top-24">
-              {submitted ? (
-                <div className="text-center py-8">
-                  <div className="w-14 h-14 bg-[#dbeafe] text-[#2563eb] rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">✓</div>
-                  <h3 className="text-lg font-bold text-slate-800 mb-2">Franchise Request Received</h3>
-                  <p className="text-xs text-slate-500 font-semibold leading-relaxed mb-6">
-                    Our partnership manager will contact you at <strong className="text-slate-700">{formData.phone}</strong> or email you detailed investment proposals within 24 hours.
-                  </p>
-                  <button 
-                    onClick={() => { setSubmitted(false); setFormData({ name: '', phone: '', email: '', location: '', investment: '' }); }}
-                    className="bg-[#2563eb] text-white font-bold px-6 py-2 rounded-full hover:bg-[#1d4ed8] transition-colors text-xs uppercase tracking-wider"
-                  >
-                    Submit Another Inquiry
-                  </button>
+          
+          {/* Inquiry Form */}
+          <div id="enquire" className="w-full lg:w-[450px] bg-white rounded-3xl p-8 shadow-2xl text-slate-800">
+            {submitted ? (
+              <div className="text-center py-10">
+                <div className="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">✓</div>
+                <h3 className="text-xl font-bold mb-2">Inquiry Submitted!</h3>
+                <p className="text-sm text-slate-500 font-medium">Thank you for your interest. Our franchise team will contact you shortly.</p>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+                <h3 className="text-xl font-bold text-[#0f2d5e] mb-2">Franchise Inquiry Form</h3>
+                
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1 block">Full Name</label>
+                    <input required type="text" value={formData.name} onChange={e=>setFormData({...formData, name:e.target.value})} className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm focus:border-[#2563eb] outline-none bg-gray-50/50" placeholder="John Doe" />
+                  </div>
+                  <div>
+                    <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1 block">Mobile</label>
+                    <input required type="tel" value={formData.phone} onChange={e=>setFormData({...formData, phone:e.target.value})} className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm focus:border-[#2563eb] outline-none bg-gray-50/50" placeholder="+91" />
+                  </div>
                 </div>
-              ) : (
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <h3 className="text-slate-800 text-lg font-bold mb-3 border-b border-gray-100 pb-2">Franchise Inquiry</h3>
-                  
-                  <div className="flex flex-col">
-                    <label className="text-[11px] font-bold text-slate-500 mb-1 uppercase tracking-wider">Your Full Name</label>
-                    <input 
-                      type="text" 
-                      required
-                      placeholder="Enter name"
-                      value={formData.name}
-                      onChange={(e) => setFormData({...formData, name: e.target.value})}
-                      className="border border-gray-200 rounded-xl px-4 py-2.5 text-xs focus:outline-none focus:border-[#2563eb] transition-colors bg-gray-50/50"
-                    />
-                  </div>
 
-                  <div className="flex flex-col">
-                    <label className="text-[11px] font-bold text-slate-500 mb-1 uppercase tracking-wider">Contact Phone</label>
-                    <input 
-                      type="tel" 
-                      required
-                      placeholder="+91 Mobile number"
-                      value={formData.phone}
-                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                      className="border border-gray-200 rounded-xl px-4 py-2.5 text-xs focus:outline-none focus:border-[#2563eb] transition-colors bg-gray-50/50"
-                    />
-                  </div>
+                <div>
+                  <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1 block">Email</label>
+                  <input type="email" value={formData.email} onChange={e=>setFormData({...formData, email:e.target.value})} className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm focus:border-[#2563eb] outline-none bg-gray-50/50" placeholder="mail@example.com" />
+                </div>
 
-                  <div className="flex flex-col">
-                    <label className="text-[11px] font-bold text-slate-500 mb-1 uppercase tracking-wider">Email Address</label>
-                    <input 
-                      type="email" 
-                      placeholder="Enter email"
-                      value={formData.email}
-                      onChange={(e) => setFormData({...formData, email: e.target.value})}
-                      className="border border-gray-200 rounded-xl px-4 py-2.5 text-xs focus:outline-none focus:border-[#2563eb] transition-colors bg-gray-50/50"
-                    />
-                  </div>
-
-                  <div className="flex flex-col">
-                    <label className="text-[11px] font-bold text-slate-500 mb-1 uppercase tracking-wider">Proposed Location/City</label>
-                    <input 
-                      type="text" 
-                      required
-                      placeholder="e.g. Whitefield, Bengaluru"
-                      value={formData.location}
-                      onChange={(e) => setFormData({...formData, location: e.target.value})}
-                      className="border border-gray-200 rounded-xl px-4 py-2.5 text-xs focus:outline-none focus:border-[#2563eb] transition-colors bg-gray-50/50"
-                    />
-                  </div>
-
-                  <div className="flex flex-col">
-                    <label className="text-[11px] font-bold text-slate-500 mb-1 uppercase tracking-wider">Budget Capacity</label>
-                    <select 
-                      value={formData.investment}
-                      onChange={(e) => setFormData({...formData, investment: e.target.value})}
-                      className="border border-gray-200 rounded-xl px-4 py-2.5 text-xs focus:outline-none focus:border-[#2563eb] transition-colors bg-gray-50/50 text-slate-500"
-                    >
-                      <option value="">Select range</option>
-                      <option value="5-10L">₹5 Lakhs - ₹10 Lakhs</option>
-                      <option value="10-15L">₹10 Lakhs - ₹15 Lakhs</option>
-                      <option value="15L+">₹15 Lakhs +</option>
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1 block">State</label>
+                    <select value={formData.state} onChange={e=>setFormData({...formData, state:e.target.value})} className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm focus:border-[#2563eb] outline-none bg-gray-50/50">
+                      <option value="">Select State</option>
+                      <option value="Karnataka">Karnataka</option>
+                      <option value="Delhi">Delhi</option>
+                      <option value="Haryana">Haryana</option>
+                      <option value="Maharashtra">Maharashtra</option>
                     </select>
                   </div>
+                  <div>
+                    <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1 block">City</label>
+                    <input type="text" value={formData.city} onChange={e=>setFormData({...formData, city:e.target.value})} className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm focus:border-[#2563eb] outline-none bg-gray-50/50" placeholder="City" />
+                  </div>
+                </div>
 
-                  <button 
-                    type="submit" 
-                    className="w-full bg-[#2563eb] text-white font-bold py-3 rounded-xl hover:bg-[#1d4ed8] transition-colors uppercase tracking-wider text-xs shadow-md mt-4"
-                  >
-                    Submit Franchise Request
-                  </button>
-                </form>
-              )}
+                <div>
+                  <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1 block">Preferred Model</label>
+                  <select value={formData.model} onChange={e=>setFormData({...formData, model:e.target.value})} className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm focus:border-[#2563eb] outline-none bg-gray-50/50">
+                    <option value="">Select Model</option>
+                    <option value="Collection Center">Sample Collection Center</option>
+                    <option value="Diagnostic Lab">Diagnostic Laboratory</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label className="text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1 block">Investment Budget</label>
+                  <select value={formData.budget} onChange={e=>setFormData({...formData, budget:e.target.value})} className="w-full border border-gray-200 rounded-xl px-3 py-2.5 text-sm focus:border-[#2563eb] outline-none bg-gray-50/50">
+                    <option value="">Select Budget</option>
+                    <option value="Under 5 Lakhs">Under 5 Lakhs</option>
+                    <option value="5-15 Lakhs">5-15 Lakhs</option>
+                    <option value="15+ Lakhs">15+ Lakhs</option>
+                  </select>
+                </div>
+
+                <button type="submit" className="w-full bg-[#2563eb] text-white font-extrabold px-6 py-3.5 rounded-xl hover:bg-[#1d4ed8] transition-colors shadow-md text-sm uppercase tracking-wider mt-2">
+                  Submit Inquiry
+                </button>
+              </form>
+            )}
+          </div>
+        </div>
+      </section>
+
+      {/* Why QXL Diagnostics */}
+      <section className="py-16 bg-white border-b border-gray-100">
+        <div className="max-w-[1260px] mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <h2 className="text-[#0f2d5e] text-3xl font-extrabold mb-4">Why QXL Diagnostics?</h2>
+            <div className="w-16 h-1 bg-[#2563eb] mx-auto rounded-full mb-6" />
+            <p className="text-slate-500 font-medium leading-relaxed mb-6">
+              QXL Diagnostics is a fast-growing diagnostic healthcare network committed to delivering accurate, affordable, and reliable diagnostic services. Equipped with advanced laboratory technology and experienced medical professionals, we provide comprehensive pathology, radiology, preventive health packages, and specialized diagnostic solutions.
+            </p>
+            <p className="text-slate-500 font-medium leading-relaxed">
+              Our laboratory follows stringent quality standards to ensure precise and timely reports. We aim to make quality diagnostics accessible across India through our expanding franchise network.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {["Clinical Pathology", "Biochemistry", "Hematology", "Microbiology", "Immunology", "Serology", "Molecular Diagnostics", "Histopathology", "Cytology", "Preventive Health", "Women's Health", "Men's Health", "Diabetes Screening", "Cardiac Risk", "Cancer Screening", "Thyroid & Hormone"].map((item, i) => (
+              <div key={i} className="bg-[#f8faff] border border-gray-150 rounded-xl p-4 flex items-center gap-3">
+                <CheckCircle2 className="w-4 h-4 text-[#2563eb] flex-shrink-0" />
+                <span className="text-sm font-bold text-slate-700">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stats */}
+      <section className="py-16 bg-gradient-to-r from-[#e0f2fe] to-[#eff6ff] border-b border-blue-100">
+        <div className="max-w-[1260px] mx-auto px-4">
+          <h2 className="text-[#0f2d5e] text-3xl font-extrabold mb-10 text-center">Our Network Strength</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {[
+              { label: "Cities Served", value: "10+", icon: <Building2 className="w-6 h-6" /> },
+              { label: "Collection Centers", value: "50+", icon: <MapPin className="w-6 h-6" /> },
+              { label: "Processing Labs", value: "3+", icon: <Beaker className="w-6 h-6" /> },
+              { label: "Patients Served", value: "1M+", icon: <Users className="w-6 h-6" /> }
+            ].map((stat, i) => (
+              <div key={i} className="bg-white rounded-3xl p-6 flex flex-col items-center text-center shadow-sm border border-gray-100">
+                <div className="w-14 h-14 bg-[#dbeafe] text-[#2563eb] rounded-2xl flex items-center justify-center mb-4">
+                  {stat.icon}
+                </div>
+                <h3 className="text-3xl font-black text-[#0f2d5e] mb-1">{stat.value}</h3>
+                <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits */}
+      <section className="py-16 bg-white border-b border-gray-100">
+        <div className="max-w-[1260px] mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-[#0f2d5e] text-3xl font-extrabold mb-4">Why Partner with QXL Diagnostics?</h2>
+              <div className="w-16 h-1 bg-[#2563eb] rounded-full mb-6" />
+              <p className="text-slate-500 font-medium leading-relaxed mb-8">
+                Joining QXL Diagnostics means becoming part of a healthcare brand focused on quality, innovation, and patient satisfaction. Starting your diagnostic business with QXL offers numerous advantages:
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {[
+                  "Low Investment Opportunity", "High Growth Healthcare Industry", 
+                  "Strong Brand Recognition", "Complete Business Setup", 
+                  "Laboratory Infrastructure", "Digital Marketing Support", 
+                  "Franchise & Phlebotomy Training", "NABL Quality Focus",
+                  "Technology-Driven Platform", "Online Booking & App"
+                ].map((benefit, i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    <ShieldCheck className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm font-bold text-slate-700">{benefit}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="bg-[#f0f9ff] rounded-[40px] p-8 md:p-12 relative overflow-hidden border border-[#dbeafe]">
+              <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#2563eb]/10 rounded-full blur-2xl"></div>
+              <h3 className="text-2xl font-bold text-[#0f2d5e] mb-6">Our Partners Receive:</h3>
+              <ul className="space-y-4">
+                {[
+                  "Staff Recruitment Assistance",
+                  "Home Sample Collection Support",
+                  "Real-Time Sample Tracking",
+                  "Report Management System",
+                  "Continuous Training Programs",
+                  "Dedicated Relationship Manager",
+                  "Business Performance Reviews"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 bg-white px-5 py-3.5 rounded-2xl shadow-sm">
+                    <Award className="w-5 h-5 text-[#2563eb]" />
+                    <span className="text-sm font-bold text-slate-700">{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Franchise Models */}
+      <section className="py-16 bg-[#f8faff]">
+        <div className="max-w-[1260px] mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-[#0f2d5e] text-3xl font-extrabold mb-4">QXL Diagnostics Franchise Model</h2>
+            <div className="w-16 h-1 bg-[#2563eb] mx-auto rounded-full mb-4" />
+            <p className="text-slate-500 font-medium max-w-2xl mx-auto">
+              Our franchise model is designed for entrepreneurs, healthcare professionals, hospitals, clinics, and medical businesses looking to establish a successful diagnostic center.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              { title: "Sample Collection Center", desc: "Ideal for entrepreneurs looking to start with lower investment while collecting patient samples." },
+              { title: "Diagnostic Laboratory", desc: "Complete diagnostic laboratory with testing facilities and sample collection." },
+              { title: "Hospital Diagnostic Partner", desc: "Dedicated diagnostic services for hospitals and healthcare institutions." },
+              { title: "Corporate Diagnostic Partner", desc: "Health screening solutions for companies and organizations." }
+            ].map((model, i) => (
+              <div key={i} className="bg-white rounded-3xl p-8 border border-gray-150 hover:shadow-lg hover:border-[#2563eb]/30 transition-all text-center flex flex-col items-center">
+                <div className="w-16 h-16 bg-[#eff6ff] rounded-2xl flex items-center justify-center mb-6">
+                  <Briefcase className="w-8 h-8 text-[#2563eb]" />
+                </div>
+                <h3 className="text-lg font-extrabold text-[#0f2d5e] mb-3">{model.title}</h3>
+                <p className="text-slate-500 text-sm font-medium">{model.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQs */}
+      <section className="py-16 bg-white border-t border-gray-100">
+        <div className="max-w-[1000px] mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-[#0f2d5e] text-3xl font-extrabold mb-4">Frequently Asked Questions</h2>
+            <div className="w-16 h-1 bg-[#2563eb] mx-auto rounded-full" />
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              { q: "What business models are available?", a: "QXL Diagnostics offers Sample Collection Centers, Full Diagnostic Laboratories, Hospital Partnerships, and Corporate Diagnostic Solutions." },
+              { q: "Who can become a franchise partner?", a: "Entrepreneurs, doctors, laboratory professionals, hospitals, clinics, healthcare investors, and business owners." },
+              { q: "Can I start in a small city?", a: "Yes. QXL supports franchise expansion across metropolitan, urban, semi-urban, and rural locations." },
+              { q: "Will QXL provide staff training?", a: "Yes. Comprehensive technical, operational, and customer service training is provided." },
+              { q: "Will marketing support be available?", a: "Yes. We provide branding, online marketing, promotional campaigns, and local marketing assistance." },
+              { q: "Does QXL help with licensing?", a: "Yes. We guide franchise partners through applicable regulatory and compliance requirements." }
+            ].map((faq, i) => (
+              <div key={i} className="bg-[#f8faff] rounded-2xl p-6 border border-blue-50">
+                <h4 className="font-bold text-slate-800 mb-2">{faq.q}</h4>
+                <p className="text-slate-500 text-sm">{faq.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }

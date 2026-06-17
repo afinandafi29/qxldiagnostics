@@ -1,12 +1,59 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { packagesData } from '../data/packages';
 import Link from "next/link";
 import { ChevronRight, FileText, Phone, MessageCircle, Droplet, Activity, Heart, Shield, Star, Users, Microscope } from "lucide-react";
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [location, setLocation] = useState("Bengaluru");
+
+  useEffect(() => {
+    const saved = localStorage.getItem('qxl_location');
+    if (saved) setLocation(saved);
+    
+    const handleLoc = (e: any) => setLocation(e.detail);
+    window.addEventListener('locationChange', handleLoc);
+    return () => window.removeEventListener('locationChange', handleLoc);
+  }, []);
 
   const slides = [
+    {
+      imageOnly: true,
+      image: "/image/food_intolerance_banner.png",
+      bgFrom: "#ffffff",
+      bgTo: "#ffffff",
+      title: "Food Intolerance",
+      badge: "NEW",
+      titleAccent: "",
+      subtitle: "",
+      subtitleAccent: "",
+      description: "",
+      cta: "",
+      ctaLink: "",
+      ctaSecondary: "",
+      ctaSecondaryLink: "",
+      imageFit: "cover",
+      features: []
+    },
+    {
+      imageOnly: true,
+      image: "/image/franchise_banner.png",
+      bgFrom: "#ffffff",
+      bgTo: "#ffffff",
+      title: "Franchise",
+      badge: "NEW",
+      titleAccent: "",
+      subtitle: "",
+      subtitleAccent: "",
+      description: "",
+      cta: "",
+      ctaLink: "",
+      ctaSecondary: "",
+      ctaSecondaryLink: "",
+      imageFit: "cover",
+      features: []
+    },
     {
       badge: "LEADER IN DIAGNOSTICS",
       title: "BENGALURU'S MOST ADVANCED",
@@ -69,7 +116,7 @@ export default function Home() {
       ctaLink: "/franchise",
       ctaSecondary: "Learn More",
       ctaSecondaryLink: "/about",
-      image: "/image/partner_with_us.png",
+      image: "/image/franchise_partnership_clinic.png",
       imageFit: "cover",
       bgFrom: "#f0f9ff",
       bgTo: "#e0f2fe",
@@ -122,32 +169,7 @@ export default function Home() {
   const handleNext = () => setCurrentSlide((prev) => (prev + 1) % slides.length);
   const activeSlide = slides[currentSlide];
 
-  const recommendedPackages = [
-    {
-      name: "Full Body Comprehensive Checkup",
-      price: "4499", old_price: "5999", tag: "POPULAR", off: "25% OFF",
-      image: "/image/package_fullbody.png", params: "86 Parameters",
-      tests: ["CBC", "LFT", "KFT", "Thyroid", "Lipid", "Diabetes"]
-    },
-    {
-      name: "Health Master Checkup",
-      price: "3299", old_price: "4399", tag: "SAFE", off: "25% OFF",
-      image: "/image/package_preventive.png", params: "68 Parameters",
-      tests: ["CBC", "LFT", "Thyroid", "HbA1c", "Vitamin D", "B12"]
-    },
-    {
-      name: "Senior Citizen – Female",
-      price: "4799", old_price: "6399", tag: "CARE", off: "25% OFF",
-      image: "/image/package_senior.png", params: "74 Parameters",
-      tests: ["Bone Density", "Thyroid", "Cardiac", "Diabetes", "Hormones", "Vitamins"]
-    },
-    {
-      name: "Senior Citizen – Male",
-      price: "4799", old_price: "6399", tag: "CARE", off: "25% OFF",
-      image: "/image/package_senior.png", params: "72 Parameters",
-      tests: ["Cardiac", "Diabetes", "KFT", "PSA", "Vitamins", "CBC"]
-    }
-  ];
+  const recommendedPackages = packagesData.slice(0, 4);
 
   const bodyOrgans = [
     { name: "Heart", image: "/image/cardiology.png" },
@@ -175,7 +197,7 @@ export default function Home() {
                   key={currentSlide}
                   src={activeSlide.image}
                   alt={activeSlide.title}
-                  className="w-full h-full object-cover object-center transition-opacity duration-500"
+                  className="w-full h-full object-contain object-center transition-opacity duration-500"
                   style={{ animation: 'fadeInSlide 0.6s ease' }}
                 />
               </div>
@@ -285,21 +307,21 @@ export default function Home() {
               </div>
             </Link>
 
-            <a href="tel:+919964639639"
+            <Link href="/franchise"
               className="bg-white rounded-2xl p-5 border border-gray-150 shadow-sm flex items-center justify-between group hover:shadow-md hover:border-[#2563eb]/30 transition-all">
               <div className="flex items-center">
                 <div className="w-12 h-12 rounded-2xl bg-[#dbeafe] flex items-center justify-center mr-4 flex-shrink-0">
-                  <Phone className="w-6 h-6 text-[#2563eb]" />
+                  <Users className="w-6 h-6 text-[#2563eb]" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-gray-900 text-[14px] mb-0.5">Call us to book your tests</h3>
-                  <p className="text-[12px] text-gray-500 font-medium">Our team of experts will guide you</p>
+                  <h3 className="font-bold text-gray-900 text-[14px] mb-0.5">Franchise</h3>
+                  <p className="text-[12px] text-gray-500 font-medium">You too can Grow with us</p>
                 </div>
               </div>
               <div className="w-8 h-8 rounded-full bg-[#dbeafe] flex items-center justify-center flex-shrink-0 group-hover:bg-[#2563eb] transition-colors">
                 <ChevronRight className="w-4 h-4 text-[#2563eb] group-hover:text-white transition-colors" />
               </div>
-            </a>
+            </Link>
 
             <a href="https://api.whatsapp.com/send?phone=919964639639" target="_blank" rel="noreferrer"
               className="bg-white rounded-2xl p-5 border border-gray-150 shadow-sm flex items-center justify-between group hover:shadow-md hover:border-green-200 transition-all">
@@ -338,16 +360,15 @@ export default function Home() {
             {recommendedPackages.map((pkg, idx) => (
               <div key={idx} className="bg-white border border-gray-150 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col group">
                 <div className="w-full bg-gradient-to-r from-[#dbeafe] to-[#eff6ff] px-4 py-3 flex justify-between items-center border-b border-[#bfdbfe]">
-                  <span className="bg-[#2563eb] text-white px-2.5 py-1 rounded-full text-[10px] font-extrabold tracking-wider shadow-sm">{pkg.tag}</span>
-                  <span className="bg-white text-emerald-600 px-2.5 py-1 rounded-full text-[10px] font-extrabold shadow-sm border border-emerald-100">{pkg.off}</span>
+                  <span className="bg-[#2563eb] text-white px-2.5 py-1 rounded-full text-[10px] font-extrabold tracking-wider shadow-sm">{pkg.tag || "PACKAGE"}</span>
+                  <span className="bg-white text-emerald-600 px-2.5 py-1 rounded-full text-[10px] font-extrabold shadow-sm border border-emerald-100">{pkg.off || "DISCOUNT"}</span>
                 </div>
                 <div className="p-5 flex flex-col flex-1 justify-between">
                   <div>
                     <h3 className="font-extrabold text-slate-800 text-[14px] leading-tight mb-2">{pkg.name}</h3>
-                    <div className="flex flex-wrap gap-1 mb-3">
-                      {pkg.tests.map((t, ti) => (
-                        <span key={ti} className="bg-[#dbeafe] text-[#2563eb] text-[9px] font-bold px-2 py-0.5 rounded-full">{t}</span>
-                      ))}
+                    <div className="flex flex-col gap-1.5 mb-3 h-[50px]">
+                      <span className="text-slate-500 text-[10px] font-semibold flex items-center gap-1.5"><Shield className="w-3 h-3 text-[#0f2d5e]" /> {pkg.parameters}</span>
+                      <span className="bg-[#dbeafe] text-[#2563eb] text-[9px] font-bold px-2 py-1 rounded-md line-clamp-2">{pkg.includes}</span>
                     </div>
                     <p className="text-[10px] text-slate-400 font-semibold mb-1">🏠 Free Home Collection Available</p>
                   </div>
@@ -355,18 +376,17 @@ export default function Home() {
                     <div className="flex items-baseline gap-2 mb-3 mt-2">
                       <span className="text-xl font-black text-slate-900">₹{pkg.price}</span>
                       <span className="text-xs text-slate-400 line-through">₹{pkg.old_price}</span>
-                      <span className="text-[11px] text-emerald-600 font-extrabold">{pkg.off}</span>
+                      <span className="text-[11px] text-emerald-600 font-extrabold">{pkg.off || "DISCOUNT"}</span>
                     </div>
                     <div className="flex gap-2">
                       <Link href="/packages" className="flex-1 text-center border border-gray-200 text-slate-600 py-2 rounded-xl text-[10px] font-bold uppercase tracking-wider hover:bg-slate-50 transition-colors">
                         Details
                       </Link>
-                      <a href={`https://api.whatsapp.com/send?phone=919964639639&text=Hi%2C%20I%20want%20to%20book%20${encodeURIComponent(pkg.name)}`}
-                        target="_blank" rel="noreferrer"
+                      <Link href={`/book?package=${encodeURIComponent(pkg.name)}`}
                         className="flex-1 text-center bg-[#2563eb] py-2 rounded-xl text-[10px] font-bold uppercase tracking-wider hover:bg-[#1d4ed8] transition-colors"
                         style={{ color: '#ffffff' }}>
                         Book Now
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -430,10 +450,10 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { name: "Dr. Shantakumar Muruda", qual: "MD, BIOCHEMISTRY", image: "/image/Dr. Shantakumar Muruda  (MD, BIOCHEMISTRY)].png" },
-              { name: "Dr. Pritilata Rout", qual: "MD, PATHOLOGY", image: "/image/Dr. Pritilata Rout (MD, PATHOLOGY).png" },
-              { name: "Dr. Ajitha Pillai", qual: "MD, MICROBIOLOGY", image: "/image/Dr. Ajitha Pillai (MD, MICROBIOLOGY).png" },
-              { name: "Dr. Naveen Kumar N", qual: "DCP, DNB PATHOLOGY", image: "/image/Dr. Naveen Kumar N (DCP, DNB PATHOLOGY).png" },
+              { name: "Dr. Shantakumar Muruda", qual: "MD, BIOCHEMISTRY", image: "/image/dr_shantakumar.png" },
+              { name: "Dr. Pritilata Rout", qual: "MD, PATHOLOGY", image: "/image/dr_pritilata.png" },
+              { name: "Dr. Ajitha Pillai", qual: "MD, MICROBIOLOGY", image: "/image/dr_ajitha.png" },
+              { name: "Dr. Naveen Kumar N", qual: "DCP, DNB PATHOLOGY", image: "/image/dr_naveen.png" },
             ].map((doc, idx) => (
               <div key={idx} className="bg-white rounded-2xl overflow-hidden flex flex-col items-center p-4 text-center group border border-gray-100 hover:shadow-lg transition-all hover:border-[#2563eb]/20">
                 <div className="w-56 h-56 rounded-2xl overflow-hidden mb-4 bg-[#dbeafe] flex items-center justify-center">
@@ -467,7 +487,7 @@ export default function Home() {
                   </div>
                   <div>
                     <label className="block text-xs font-bold text-slate-700 mb-1">Phone Number</label>
-                    <input type="tel" placeholder="+91 99646 39639" className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#2563eb] focus:ring-1 focus:ring-[#2563eb] transition-all" />
+                    <input type="tel" placeholder="+91 9964 639639" className="w-full bg-white border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#2563eb] focus:ring-1 focus:ring-[#2563eb] transition-all" />
                   </div>
                 </div>
                 <div>
@@ -491,19 +511,23 @@ export default function Home() {
             {/* Google Map */}
             <div className="flex flex-col">
               <span className="inline-block bg-[#dbeafe] text-[#2563eb] text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-widest mb-3 w-fit">Our Location</span>
-              <h2 className="text-[#0f2d5e] text-3xl font-extrabold mb-2">Visit Our Lab</h2>
+
               <p className="text-slate-500 text-sm font-medium mb-6">Conveniently located in Bengaluru, providing state-of-the-art diagnostic facilities.</p>
               
               <div className="w-full flex-1 min-h-[350px] rounded-3xl overflow-hidden shadow-md border border-gray-200">
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.3444498305096!2d77.4824552!3d12.9113827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3fa0365530ab%3A0x2ea1617d2b28d62f!2sQXL+DIAGNOSTICS!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                  src={
+                    location === "Gurgaon" ? "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83923192864!2d76.849658!3d28.4229575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19d582e38859%3A0x2cf5fe8e5c64b1e!2sGurugram%2C%20Haryana!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" :
+                    location === "Delhi" ? "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224346.61368636906!2d77.0688975!3d28.527582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" :
+                    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.3444498305096!2d77.4824552!3d12.9113827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3fa0365530ab%3A0x2ea1617d2b28d62f!2sQXL+DIAGNOSTICS!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                  } 
                   width="100%" 
                   height="100%" 
                   style={{ border: 0 }} 
                   allowFullScreen={true} 
                   loading="lazy" 
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="QXL Diagnostics Lab Location"
+                  title={`${location} Diagnostics Lab Location`}
                 ></iframe>
               </div>
             </div>

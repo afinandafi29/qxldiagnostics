@@ -7,15 +7,19 @@ export default function AboutPage() {
   return (
     <div className="bg-[#f8faff] min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-[#e0f2fe] to-[#eff6ff] py-14 border-b border-gray-100">
-        <div className="max-w-[1260px] mx-auto px-4 flex flex-col items-center text-center">
+      <section 
+        className="relative py-20 md:py-28 border-b border-gray-100 bg-cover bg-center"
+        style={{ backgroundImage: "url('/image/about_hero_bg.jpg')" }}
+      >
+        <div className="absolute inset-0 bg-[#f8faff]/85 backdrop-blur-[2px]"></div>
+        <div className="relative z-10 max-w-[1260px] mx-auto px-4 flex flex-col items-center text-center">
           <span className="inline-block bg-[#2563eb] text-white text-[10px] font-extrabold px-3 py-1.5 rounded-full tracking-widest uppercase mb-4 shadow-sm">
             About Us
           </span>
           <h1 className="text-3xl md:text-5xl font-extrabold text-[#0f2d5e] mb-4 leading-tight">
             QXL Diagnostics Bengaluru
           </h1>
-          <p className="text-slate-500 text-sm md:text-base max-w-3xl font-medium mb-6">
+          <p className="text-slate-600 text-sm md:text-base max-w-3xl font-medium mb-6">
             At QXL Diagnostics Super Speciality Lab, Bengaluru, we take pride in offering state-of-the-art diagnostic services, designed to deliver unmatched precision and efficiency.
           </p>
         </div>
@@ -29,7 +33,7 @@ export default function AboutPage() {
               <h2 className="text-[#0f2d5e] text-3xl font-extrabold mb-4">Precision & Efficiency</h2>
               <div className="w-16 h-1 bg-[#2563eb] rounded-full mb-6" />
               <p className="text-slate-600 leading-relaxed mb-4">
-                Our services include seamless home and clinic sample collection across Bengaluru, ensuring timely and reliable results to support your patient care. <strong className="text-[#2563eb]">QXL Diagnostics Super Specialty Lab (Unit of Qualitify Healthtech Pvt Ltd)</strong>
+                Our services include seamless home and clinic sample collection across Bengaluru, ensuring timely and reliable results to support your patient care. <strong className="text-[#2563eb]">QXL Diagnostics Super Specialty Lab</strong>
               </p>
               <p className="text-slate-600 leading-relaxed">
                 Our laboratory is equipped to perform advanced tests, including autoimmune panels, India-specific allergen panels, immunofluorescence, immunoblot, ELISA, chemiluminescence, Multiplex PCR (including FilmArray for syndrome-based testing), coagulation factor assays, TB PCR by CB NAAT (with NTM screening), automated advanced microbiology for infectious diseases, maternal screening, electrophoresis assays, and Histo-Cytopathology with IHC, along with other cutting-edge immunoassays. 
@@ -38,20 +42,21 @@ export default function AboutPage() {
                 Each test is meticulously reviewed by our experienced consultants, including pathologists, microbiologists, and biochemists.
               </p>
               
-              <div className="mt-8 bg-[#f0f9ff] p-6 rounded-2xl border border-[#2563eb]/20 flex items-center justify-between">
-                <div>
-                  <h3 className="font-bold text-[#0f2d5e] mb-1">Take a Virtual Tour</h3>
-                  <p className="text-sm text-slate-500">View our lab facilities and infrastructure</p>
-                </div>
-                <a href="https://www.google.com/maps/place/QXL+DIAGNOSTICS/@12.9113827,77.4824552,17z" target="_blank" rel="noreferrer" className="bg-[#2563eb] text-white font-bold px-6 py-2.5 rounded-full hover:bg-[#1d4ed8] transition-colors shadow-sm text-sm">
-                  View Map
-                </a>
-              </div>
+              {/* Virtual tour moved to the right column */}
             </div>
             <div className="bg-[#dbeafe] rounded-3xl p-8 flex items-center justify-center relative overflow-hidden min-h-[400px]">
                <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-[#2563eb]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none" />
                <div className="absolute bottom-0 left-0 w-[200px] h-[200px] bg-[#2563eb]/15 rounded-full blur-2xl translate-y-1/3 -translate-x-1/4 pointer-events-none" />
-               <img src="/image/about_lab.png" alt="Lab Equipment" className="relative z-10 w-full h-full object-cover rounded-2xl shadow-lg" onError={(e) => { e.currentTarget.src = "https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=600&auto=format&fit=crop"; }} />
+               <iframe 
+                 src="https://www.google.com/maps/embed?pb=!4v1710000000000!6m8!1m7!1sAF1QipOT_E1OvCmLPtbrGMkCFVjybPWfPYcc217TvRyC!2m2!1d12.9113766!2d77.4850736!3f193.36!4f89.83!5f0" 
+                 width="100%" 
+                 height="100%" 
+                 className="relative z-10 w-full h-[400px] object-cover rounded-2xl shadow-lg border-0" 
+                 allowFullScreen 
+                 loading="lazy" 
+                 referrerPolicy="no-referrer-when-downgrade" 
+                 title="QXL Diagnostics Virtual Tour">
+               </iframe>
             </div>
           </div>
         </div>
@@ -62,10 +67,19 @@ export default function AboutPage() {
         <div className="max-w-[1260px] mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-[#0f2d5e] text-3xl font-extrabold mb-3">Our Analytical Equipment</h2>
-            <div className="w-16 h-1 bg-[#2563eb] mx-auto rounded-full mb-4" />
-            <p className="text-slate-500 text-sm max-w-3xl mx-auto font-medium">
+            <div className="w-16 h-1 bg-[#2563eb] mx-auto rounded-full mb-6" />
+            <p className="text-slate-500 text-sm max-w-3xl mx-auto font-medium mb-12">
               Equipped with state-of-the-art analytical instruments that ensure precision, accuracy, and efficiency in all our diagnostic processes.
             </p>
+            
+            <div className="flex flex-col md:flex-row gap-6 justify-center mb-16 max-w-5xl mx-auto">
+              <div className="w-full md:w-1/2 rounded-3xl overflow-hidden shadow-lg border border-gray-200">
+                <img src="/image/equipment_1.jpg" alt="Analytical Equipment in use" className="w-full h-[350px] object-cover hover:scale-105 transition-transform duration-700" />
+              </div>
+              <div className="w-full md:w-1/2 rounded-3xl overflow-hidden shadow-lg border border-gray-200">
+                <img src="/image/equipment_2.png" alt="Lab Technician operating equipment" className="w-full h-[350px] object-cover hover:scale-105 transition-transform duration-700" />
+              </div>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -170,7 +184,7 @@ export default function AboutPage() {
                <div className="bg-[#2563eb] p-3 rounded-full flex-shrink-0"><Phone className="text-white w-5 h-5" /></div>
                <div>
                  <h4 className="text-white font-bold mb-1">Phone</h4>
-                 <p className="text-slate-400 text-sm">+91 99646 39639</p>
+                 <p className="text-slate-400 text-sm">+91 9964 639639</p>
                </div>
              </div>
           </div>

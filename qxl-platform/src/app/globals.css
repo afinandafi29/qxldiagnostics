@@ -178,7 +178,6 @@
 
         /* Ensure links/buttons with bg-white inside dark background containers have proper text color */
         .text-white a.bg-white,
-        .text-white a[class*="bg-white"],
         a.bg-white {
             color: #0284c7 !important; /* sky-600 */
         }

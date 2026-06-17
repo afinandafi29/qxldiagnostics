@@ -21,7 +21,8 @@ export default function Footer() {
               className="h-14 w-auto object-contain mb-5 brightness-0 invert"
               onError={(e) => { e.currentTarget.src = '/image/QXL-Diagnostics-Lab-Logo-1.jpg'; }} />
             <p className="text-slate-300 text-[13px] leading-relaxed font-medium mb-5">
-              QXL Diagnostics Super Speciality Lab — Unit of Qualitify Healthtech Pvt Ltd. NABL certified diagnostic testing across Bengaluru.
+              Delivering Accurate Diagnostics. Empowering Better Healthcare.<br />
+              QXL Diagnostics Super Speciality Lab. NABL certified diagnostic testing across Bengaluru.
             </p>
             {/* NABL Badge */}
             <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-xl px-4 py-2.5">
@@ -120,7 +121,7 @@ export default function Footer() {
                   <Phone className="w-4 h-4 text-[#2563eb]" />
                 </div>
                 <div>
-                  <a href="tel:+919964639639" className="text-white text-[13px] font-bold hover:text-blue-300 transition-colors">+91 99646 39639</a>
+                  <a href="tel:+919964639639" className="text-white text-[13px] font-bold hover:text-blue-300 transition-colors">+91 9964 639639</a>
                   <p className="text-slate-400 text-[11px] mt-0.5">Open 24x7</p>
                 </div>
               </li>
@@ -142,7 +143,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-[1260px] mx-auto px-4 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="text-slate-400 text-[12px] font-medium">
-            © {year} QXL Diagnostics — Unit of Qualitify Healthtech Pvt Ltd. All rights reserved.
+            © {year} QXL Diagnostics. All rights reserved.
           </p>
           <p className="text-slate-400 text-[12px] font-medium">
             NABL Certified · ISO 15189 · CAP Standards · Bengaluru, Karnataka

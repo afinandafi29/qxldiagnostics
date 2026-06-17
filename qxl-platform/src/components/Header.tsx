@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { MapPin, Search, Phone, User, Download, ChevronDown, Mic, FileText } from 'lucide-react';
 import PrescriptionModal from './PrescriptionModal';
@@ -7,6 +7,29 @@ import PrescriptionModal from './PrescriptionModal';
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [location, setLocation] = useState("Bengaluru");
+  const [showLocationMenu, setShowLocationMenu] = useState(false);
+  const locationMenuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const saved = localStorage.getItem('qxl_location');
+    if (saved) setLocation(saved);
+    
+    const handleClickOutside = (e: MouseEvent) => {
+      if (locationMenuRef.current && !locationMenuRef.current.contains(e.target as Node)) {
+        setShowLocationMenu(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const changeLocation = (loc: string) => {
+    setLocation(loc);
+    localStorage.setItem('qxl_location', loc);
+    window.dispatchEvent(new CustomEvent('locationChange', { detail: loc }));
+    setShowLocationMenu(false);
+  };
   return (
     <header className="w-full bg-white sticky top-0 z-50 border-b border-gray-200">
       
@@ -27,12 +50,31 @@ export default function Header() {
             
             <div className="h-8 w-px bg-gray-200 mx-5 hidden md:block"></div>
             
-            <div className="flex items-center cursor-pointer text-gray-700 hover:text-[#2563eb] transition-colors">
-              <div className="w-8 h-8 rounded-full bg-[#dbeafe] flex items-center justify-center mr-2">
-                <MapPin className="w-4.5 h-4.5 text-[#2563eb]" />
+            <div className="relative" ref={locationMenuRef}>
+              <div 
+                className="flex items-center cursor-pointer text-gray-700 hover:text-[#2563eb] transition-colors"
+                onClick={() => setShowLocationMenu(!showLocationMenu)}
+              >
+                <div className="w-8 h-8 rounded-full bg-[#dbeafe] flex items-center justify-center mr-2">
+                  <MapPin className="w-4.5 h-4.5 text-[#2563eb]" />
+                </div>
+                <span className="font-semibold text-sm text-[#4a5568]">{location}</span>
+                <ChevronDown className="w-4 h-4 ml-1 text-gray-400 hidden sm:block" />
               </div>
-              <span className="font-semibold text-sm text-[#4a5568]">Bengaluru</span>
-              <ChevronDown className="w-4 h-4 ml-1 text-gray-400 hidden sm:block" />
+              
+              {showLocationMenu && (
+                <div className="absolute top-full left-0 mt-2 w-40 bg-white rounded-xl shadow-lg border border-gray-100 py-2 z-50">
+                  {['Bengaluru', 'Gurgaon', 'Delhi'].map((loc) => (
+                    <div 
+                      key={loc}
+                      onClick={() => changeLocation(loc)}
+                      className={`px-4 py-2 text-sm cursor-pointer hover:bg-blue-50 transition-colors ${location === loc ? 'font-bold text-[#2563eb]' : 'text-gray-700'}`}
+                    >
+                      {loc}
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
 
@@ -73,7 +115,7 @@ export default function Header() {
               </div>
               <div className="flex flex-col leading-tight">
                 <span className="text-[11px] text-gray-500 font-medium">Home Collection</span>
-                <a href="tel:+919964639639" className="text-[#2563eb] font-bold text-sm hover:underline">+91 99646 39639</a>
+                <a href="tel:+919964639639" className="text-[#2563eb] font-bold text-sm hover:underline">+91 9964 639639</a>
               </div>
             </div>
 
@@ -96,16 +138,17 @@ export default function Header() {
           <nav className="flex items-center justify-center w-full">
             
             {/* Main Links */}
-            <div className="flex items-center justify-between w-full max-w-[1100px] text-slate-700 text-[14px] font-bold">
+            <div className="flex items-center justify-between w-full max-w-[1200px] text-slate-700 text-[11px] xl:text-[12px] font-bold gap-2">
               <Link href="/" className="hover:text-[#2563eb] transition-colors uppercase tracking-wide">Home</Link>
-              <Link href="/about" className="hover:text-[#2563eb] transition-colors uppercase tracking-wide">About Us</Link>
-              <Link href="/founder" className="hover:text-[#2563eb] transition-colors uppercase tracking-wide">Founder & Advisors</Link>
-              <Link href="/specialities" className="hover:text-[#2563eb] transition-colors uppercase tracking-wide">Our Specialities</Link>
-              <Link href="/packages" className="bg-sky-100 text-sky-700 px-4 py-2 rounded-lg font-bold hover:bg-sky-200 transition-colors uppercase tracking-wide text-[13px] shadow-sm">Packages</Link>
+              <Link href="/about" className="hover:text-[#2563eb] transition-colors uppercase tracking-wide whitespace-nowrap">About Us</Link>
+              <Link href="/founder" className="hover:text-[#2563eb] transition-colors uppercase tracking-wide whitespace-nowrap">Founder & Advisors</Link>
+              <Link href="/specialities" className="hover:text-[#2563eb] transition-colors uppercase tracking-wide whitespace-nowrap">Our Specialities</Link>
+              <Link href="/packages" className="hover:text-[#2563eb] transition-colors uppercase tracking-wide">Packages</Link>
+              <Link href="/book" className="hover:text-[#2563eb] transition-colors uppercase tracking-wide">Book a Test</Link>
+              <Link href="/centers" className="hover:text-[#2563eb] transition-colors uppercase tracking-wide whitespace-nowrap">Find Nearest Centre</Link>
+              <Link href="/report" className="hover:text-[#2563eb] transition-colors uppercase tracking-wide whitespace-nowrap">Download Report</Link>
+              <Link href="/franchise" className="hover:text-[#2563eb] transition-colors uppercase tracking-wide">Franchise</Link>
               <Link href="/login" className="hover:text-[#2563eb] transition-colors uppercase tracking-wide">Login</Link>
-              <Link href="/book" className="hover:text-[#2563eb] transition-colors uppercase tracking-wide">My Bookings</Link>
-              <Link href="/report" className="hover:text-[#2563eb] transition-colors uppercase tracking-wide">My Reports</Link>
-              <Link href="/book" className="bg-[#2563eb] text-white px-6 py-2 rounded-full hover:bg-[#1d4ed8] transition-all shadow-sm">Book a Test</Link>
             </div>
 
           </nav>
@@ -168,9 +211,37 @@ export default function Header() {
               <Link 
                 href="/packages" 
                 onClick={() => setMobileMenuOpen(false)}
-                className="bg-sky-100 text-sky-700 py-2 px-3 rounded-lg hover:bg-sky-200 transition-colors my-1 text-center"
+                className="hover:text-[#2563eb] py-2 border-b border-gray-50 transition-colors"
               >
                 Packages
+              </Link>
+              <Link 
+                href="/book" 
+                onClick={() => setMobileMenuOpen(false)}
+                className="hover:text-[#2563eb] py-2 border-b border-gray-50 transition-colors"
+              >
+                Book a Test
+              </Link>
+              <Link 
+                href="/centers" 
+                onClick={() => setMobileMenuOpen(false)}
+                className="hover:text-[#2563eb] py-2 border-b border-gray-50 transition-colors"
+              >
+                Find Nearest Centre
+              </Link>
+              <Link 
+                href="/report" 
+                onClick={() => setMobileMenuOpen(false)}
+                className="hover:text-[#2563eb] py-2 border-b border-gray-50 transition-colors"
+              >
+                Download Report
+              </Link>
+              <Link 
+                href="/franchise" 
+                onClick={() => setMobileMenuOpen(false)}
+                className="hover:text-[#2563eb] py-2 border-b border-gray-50 transition-colors"
+              >
+                Franchise
               </Link>
               <Link 
                 href="/login" 
@@ -178,20 +249,6 @@ export default function Header() {
                 className="hover:text-[#2563eb] py-2 border-b border-gray-50 transition-colors"
               >
                 Login
-              </Link>
-              <Link 
-                href="/book" 
-                onClick={() => setMobileMenuOpen(false)}
-                className="hover:text-[#2563eb] py-2 border-b border-gray-50 transition-colors"
-              >
-                My Bookings
-              </Link>
-              <Link 
-                href="/report" 
-                onClick={() => setMobileMenuOpen(false)}
-                className="hover:text-[#2563eb] py-2 border-b border-gray-50 transition-colors"
-              >
-                My Reports
               </Link>
             </nav>
             
@@ -207,7 +264,7 @@ export default function Header() {
                 href="tel:+919964639639" 
                 className="w-full text-center bg-gray-50 text-slate-700 font-bold py-3 rounded-full hover:bg-gray-100 transition-colors text-xs flex items-center justify-center gap-2"
               >
-                <Phone className="w-4 h-4 text-[#2563eb]" /> Call: +91 99646 39639
+                <Phone className="w-4 h-4 text-[#2563eb]" /> Call: +91 9964 639639
               </a>
             </div>
           </div>

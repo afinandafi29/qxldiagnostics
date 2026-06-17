@@ -1,6 +1,7 @@
 "use client";
-import React, { useState } from 'react';
-import { Calendar, User, Phone, MapPin, Search, ChevronRight } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Calendar, User, Phone, MapPin, Search, ChevronRight, Shield } from 'lucide-react';
+import { packagesData } from '../../data/packages';
 
 export default function BookPage() {
   const [formData, setFormData] = useState({
@@ -13,12 +14,22 @@ export default function BookPage() {
   });
   const [submitted, setSubmitted] = useState(false);
 
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const packageName = params.get('package');
+    if (packageName) {
+      setFormData(prev => ({ ...prev, testName: packageName }));
+    }
+  }, []);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (formData.name && formData.phone) {
       setSubmitted(true);
     }
   };
+
+  const selectedPackageDetails = packagesData.find(p => p.name === formData.testName);
 
   return (
     <div className="bg-[#f8faff] min-h-screen">
@@ -182,6 +193,29 @@ export default function BookPage() {
 
           {/* Right Info Sidebar */}
           <div className="w-full lg:w-1/3 space-y-6">
+            {selectedPackageDetails && (
+              <div className="bg-white border border-[#2563eb]/20 rounded-3xl p-6 shadow-md relative overflow-hidden">
+                <div className="absolute top-0 right-0 bg-[#2563eb] text-white px-3 py-1 rounded-bl-xl text-[10px] font-extrabold uppercase tracking-wider">
+                  Selected
+                </div>
+                <h3 className="font-extrabold text-[#0f2d5e] text-lg mb-2 pr-16">{selectedPackageDetails.name}</h3>
+                
+                <div className="flex items-baseline gap-2 mb-4">
+                  <span className="text-2xl font-black text-[#2563eb]">₹{selectedPackageDetails.price}</span>
+                  <span className="text-sm text-slate-400 line-through">₹{selectedPackageDetails.old_price}</span>
+                </div>
+                
+                <div className="mb-4">
+                  <p className="text-[11px] text-slate-500 font-semibold mb-2 flex items-center gap-1.5">
+                    <Shield className="w-3.5 h-3.5 text-[#0f2d5e]" /> {selectedPackageDetails.parameters}
+                  </p>
+                  <p className="text-[11px] text-slate-600 font-medium leading-relaxed">
+                    <strong>Includes:</strong> {selectedPackageDetails.includes}
+                  </p>
+                </div>
+              </div>
+            )}
+            
             <div className="bg-gradient-to-br from-[#0f2d5e] to-[#0e4253] text-white rounded-3xl p-6 shadow-md">
               <h3 className="font-bold text-lg mb-4">Why Book with QXL?</h3>
               <ul className="space-y-4 text-xs font-semibold">
@@ -208,7 +242,7 @@ export default function BookPage() {
               <h3 className="font-bold text-slate-800 text-sm mb-2">Need Instant Help?</h3>
               <p className="text-slate-500 text-xs mb-4 font-semibold">Speak directly with our test booking coordinators</p>
               <a href="tel:+919964639639" className="inline-flex items-center gap-2 bg-[#dbeafe] text-[#2563eb] font-extrabold px-6 py-2.5 rounded-full text-xs hover:bg-[#d5e8ed] transition-colors">
-                <Phone className="w-4 h-4" /> Call +91 99646 39639
+                <Phone className="w-4 h-4" /> Call +91 9964 639639
               </a>
             </div>
           </div>
